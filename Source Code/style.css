@@ -4,7 +4,6 @@ body, html {
     margin: 0;
     padding: 0;
 }
-
 .background {
     position: absolute;
     display: block;
@@ -12,52 +11,38 @@ body, html {
     left: 0;
     z-index: -1;
 }
-/*===========================================================
-General styling for multiple sections
-===========================================================*/
-/*Foundation for Paralax*/
-.hero, .bookClub {
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-    z-index: -2
+/*=====
+ HERO
+======*/
+.hero {
+  background-image: url('../imgs/night2.jpg');
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  z-index: -2;
+  color: black;
 }
-
-/*===========================================================
-Styling for the hero portion of the page.
-===========================================================*/
-.hero {background-image: url('../imgs/night.jpg');}
-
-/*Sets the about content to the middle of the about section of the landing page.*/
-.banner {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: black;
-    background: rgba(225, 225, 225, .5);
+.headline {
+  text-align: center;
+  text-shadow: 1px 1px violet;
+  position: absolute;
+  top: 50%;
+  width: 100%;
 }
-
-/*inverse color info from the above style for the first section of the page.*/
-.banner {
-    color: white;
-    background: rgba(0, 0, 0, .5);
+/*====
+ ABOUT
+======*/
+.about {
+  padding: 3em;
 }
-
-/*===========================================================
-Styling for the book club portion of the page.
-===========================================================*/
-.bookClub {
-  padding: 20em;
-}
-
-.bookClub {background-image: url('../imgs/library.jpg');}
-
-/*without margin, the forms sit at the very top of the setion*/
-.carousel-inner img {
-  margin: auto;
+/*====
+ Social
+=====*/
+.social {
+  padding: 3em;
+  padding-left: 10em;
+  background-color: black;
 }

@@ -25,10 +25,10 @@ var Particles = (function(window, document) {
       _.defaults = {
         responsive: null,
         selector: null,
-        maxParticles: 200,
-        sizeVariations: 3,
+        maxParticles: 100,
+        sizeVariations: 2,
         speed: 0.5,
-        color: '#f44242',
+        color: '#FFFFFF',
         minDistance: 120,
         connectParticles: false
       };
