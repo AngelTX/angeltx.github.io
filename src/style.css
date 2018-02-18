@@ -27,7 +27,6 @@ body, html {
 }
 .headline {
   text-align: center;
-  text-shadow: 1px 1px violet;
   position: absolute;
   top: 50%;
   width: 100%;
@@ -37,20 +36,19 @@ body, html {
 ======*/
 .about {
   padding: 3em;
-  background-color: green;
+  background-color: white;
 }
 /*====
  Social
 =====*/
-.contact {
-  background-color: black;
-  padding: 2em;
+input, textarea {
+  display: block;
 }
 /*====
  Social
 =====*/
 .social {
   padding: 3em;
-  padding-left: 10em;
-  background-color: red;
+  padding-left: 14em;
+  background-color: black;
 }
