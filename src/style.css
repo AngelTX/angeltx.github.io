@@ -37,6 +37,14 @@ body, html {
 ======*/
 .about {
   padding: 3em;
+  background-color: green;
+}
+/*====
+ Social
+=====*/
+.contact {
+  background-color: black;
+  padding: 2em;
 }
 /*====
  Social
@@ -44,5 +52,5 @@ body, html {
 .social {
   padding: 3em;
   padding-left: 10em;
-  background-color: black;
+  background-color: red;
 }
