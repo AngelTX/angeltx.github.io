@@ -19,100 +19,114 @@
     };
     </script>
 
-    <!-- Hero -->
-    <div class="container-flex hero">
-      <div class="headline">
-        <h1>Miguel Angel Bernal</h1>
-        <div class="title">
-    			<div class="dynamic-title cd-headline clip is-full-width">
-    				<span>Software Development That is&nbsp;</span>
-    				<span class="cd-words-wrapper">
-
-    					<b class="is-visible">&nbsp;<span class="gold-title">Mobile</span></b>
-                        <b>&nbsp;<span class="gold-title">Agile</span></b>
-    					<b>&nbsp;<span class="gold-title">Bold</span></b>
-    				</span>
-    			</div>
-    		</div>
+    <header>
+      <div class="container-flex">
+        <nav class="navbar sticky-top navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">
+            <img src="imgs/white_logo_transparent.png" width="150" height="150" alt="logo">
+          </a>
+        </nav>
       </div>
-    </div>
 
-    <!--About Section -->
-    <div class="about container-flex">
-      <div class="row">
-        <div class="col">
-          <img src="imgs/miguel.jpg" class ="img-fluid" alt="Miguel Bernal">
-        </div>
-        <div class="col">
-          <h1>About</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#contactModal">
-            Contact
-          </button>
+      <!-- Hero -->
+      <div class="container-flex hero">
+        <div class="headline">
+          <h1>Miguel Angel Bernal</h1>
+          <div class="title">
+      			<div class="dynamic-title cd-headline clip is-full-width">
+      				<span>Software Development That is&nbsp;</span>
+      				<span class="cd-words-wrapper">
+
+      					<b class="is-visible">&nbsp;<span class="gold-title">Mobile</span></b>
+                          <b>&nbsp;<span class="gold-title">Agile</span></b>
+      					<b>&nbsp;<span class="gold-title">Bold</span></b>
+      				</span>
+      			</div>
+      		</div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <!-- Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Contact</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+    <main>
+      <!--About Section -->
+      <div class="about container-flex">
+        <div class="row">
+          <div class="col">
+            <img src="imgs/miguel.jpg" class ="img-fluid" alt="Miguel Bernal">
+          </div>
+          <div class="col">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#contactModal">
+              Contact
             </button>
           </div>
-          <div class="modal-body">
-            <form id="contact-form" method="post" action-"src/contact.php" role="form" data-toggle="validator">
-              <div class="messages"></div>
+        </div>
+      </div>
 
-              <div class="controls">
-                <div class="form-group">
-                  <label for="form_name">Name *</label>
-                  <input id="form_Name" type="text" name="name" class="form-control" placeholder="Enter your name" required="required" data-error="Name is required.">
-                  <div class="help-block with-errors"></div>
+      <!-- Modal -->
+      <div class="modal fade" id="contactModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Contact</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="contact-form" method="post" action-"src/contact.php" role="form" data-toggle="validator">
+                <div class="messages"></div>
+
+                <div class="controls">
+                  <div class="form-group">
+                    <label for="form_name">Name *</label>
+                    <input id="form_Name" type="text" name="name" class="form-control" placeholder="Enter your name" required="required" data-error="Name is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="form_email">Email address *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="6" required="required" data-error="Leave me a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <button type="submit" class="btn btn-primary" value="Send message">Send Message</button>
+                  <p class="text-muted"><strong>*</strong> These fields are required.</p>
                 </div>
-                <div class="form-group">
-                  <label for="form_email">Email address *</label>
-                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
-                  <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group">
-                  <label for="form_message">Message *</label>
-                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="6" required="required" data-error="Leave me a message."></textarea>
-                  <div class="help-block with-errors"></div>
-                </div>
-                <button type="submit" class="btn btn-primary" value="Send message">Send Message</button>
-                <p class="text-muted"><strong>*</strong> These fields are required.</p>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
-    <!--Social Media Accounts-->
-    <div class="social container-flex">
-      <div class="row">
-        <div class="col">
-          <a href="https://github.com/angeltx" target="_blank"><i class="fab fa-github-square fa-10x"></i></a>
-        </div>
-        <div class="col">
-          <a href="https://linkedin.com/in/angelcode" target="_blank"><i class="fab fa-linkedin fa-10x"></i></a>
-        </div>
-        <div class="col">
-          <a href="https://www.instagram.com/miguelangelnt/" target="_blank"><i class="fab fa-instagram fa-10x"></i></a>
+    <footer>
+      <!--Social Media Accounts-->
+      <div class="social container-flex">
+        <div class="row">
+          <div class="col">
+            <a href="https://github.com/angeltx" target="_blank"><i class="fab fa-github-square fa-10x"></i></a>
+          </div>
+          <div class="col">
+            <a href="https://linkedin.com/in/angelcode" target="_blank"><i class="fab fa-linkedin fa-10x"></i></a>
+          </div>
+          <div class="col">
+            <a href="https://www.instagram.com/miguelangelnt/" target="_blank"><i class="fab fa-instagram fa-10x"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-
+    </footer>
+    
     <canvas class="background"></canvas>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="src/particles.js"></script>

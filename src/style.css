@@ -11,6 +11,10 @@ body, html {
     left: 0;
     z-index: -1;
 }
+
+.bg-dark {
+  background-color: black;
+}
 /*=====
  HERO
 ======*/
@@ -28,7 +32,7 @@ body, html {
 .headline {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: 100%;
 }
 /*====
