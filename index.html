@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
       <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Angel Code</title>
   </head>
 
@@ -19,37 +20,32 @@
     };
     </script>
 
-    <header>
-      <div class="container-flex">
-        <nav class="navbar sticky-top navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">
-            <img src="imgs/white_logo_transparent.png" width="150" height="150" alt="logo">
-          </a>
-        </nav>
-      </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="imgs/white_logo_transparent.png" width="150" height="150" alt="logo">
+      </a>
+    </nav>
 
-      <!-- Hero -->
-      <div class="container-flex hero">
-        <div class="headline">
-          <h1>Miguel Angel Bernal</h1>
-          <div class="title">
-      			<div class="dynamic-title cd-headline clip is-full-width">
-      				<span>Software Development That is&nbsp;</span>
-      				<span class="cd-words-wrapper">
-
-      					<b class="is-visible">&nbsp;<span class="gold-title">Mobile</span></b>
-                          <b>&nbsp;<span class="gold-title">Agile</span></b>
-      					<b>&nbsp;<span class="gold-title">Bold</span></b>
-      				</span>
-      			</div>
-      		</div>
-        </div>
+    <!-- Hero -->
+    <header class="container-fluid hero">
+      <div class="headline">
+        <h1>Miguel Angel Bernal</h1>
+        <div class="title">
+    			<div class="dynamic-title cd-headline clip is-full-width">
+    				<span>Software Development That is&nbsp;</span>
+    				<span class="cd-words-wrapper">
+    					<b class="is-visible">&nbsp;<span class="gold-title">Mobile</span></b>
+                        <b>&nbsp;<span class="gold-title">Agile</span></b>
+    					<b>&nbsp;<span class="gold-title">Bold</span></b>
+    				</span>
+    			</div>
+    		</div>
       </div>
     </header>
 
-    <main>
       <!--About Section -->
-      <div class="about container-flex">
+      <main class="container-fluid about">
         <div class="row">
           <div class="col">
             <img src="imgs/miguel.jpg" class ="img-fluid" alt="Miguel Bernal">
@@ -65,75 +61,70 @@
             </button>
           </div>
         </div>
-      </div>
+      </main>
 
-      <!-- Modal -->
-      <div class="modal fade" id="contactModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Contact</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form id="contact-form" method="post" action-"src/contact.php" role="form" data-toggle="validator">
-                <div class="messages"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="contact-form" method="post" action-"src/contact.php" role="form" data-toggle="validator">
+              <div class="messages"></div>
 
-                <div class="controls">
-                  <div class="form-group">
-                    <label for="form_name">Name *</label>
-                    <input id="form_Name" type="text" name="name" class="form-control" placeholder="Enter your name" required="required" data-error="Name is required.">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                  <div class="form-group">
-                    <label for="form_email">Email address *</label>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                  <div class="form-group">
-                    <label for="form_message">Message *</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="6" required="required" data-error="Leave me a message."></textarea>
-                    <div class="help-block with-errors"></div>
-                  </div>
-                  <button type="submit" class="btn btn-primary" value="Send message">Send Message</button>
-                  <p class="text-muted"><strong>*</strong> These fields are required.</p>
+              <div class="controls">
+                <div class="form-group">
+                  <label for="form_name">Name *</label>
+                  <input id="form_Name" type="text" name="name" class="form-control" placeholder="Enter your name" required="required" data-error="Name is required.">
+                  <div class="help-block with-errors"></div>
                 </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
+                <div class="form-group">
+                  <label for="form_email">Email address *</label>
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                  <label for="form_message">Message *</label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="6" required="required" data-error="Leave me a message."></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <button type="submit" class="btn btn-primary" value="Send message">Send Message</button>
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-    </main>
+    </div>
 
-    <footer>
-      <!--Social Media Accounts-->
-      <div class="social container-flex">
-        <div class="row">
-          <div class="col">
-            <a href="https://github.com/angeltx" target="_blank"><i class="fab fa-github-square fa-10x"></i></a>
-          </div>
-          <div class="col">
-            <a href="https://linkedin.com/in/angelcode" target="_blank"><i class="fab fa-linkedin fa-10x"></i></a>
-          </div>
-          <div class="col">
-            <a href="https://www.instagram.com/miguelangelnt/" target="_blank"><i class="fab fa-instagram fa-10x"></i></a>
-          </div>
+    <!--Social Media Accounts-->
+    <footer class="container-fluid social">
+      <div class="row">
+        <div class="col">
+          <a href="https://github.com/angeltx" target="_blank"><i class="fab fa-github-square fa-10x"></i></a>
+        </div>
+        <div class="col">
+          <a href="https://linkedin.com/in/angelcode" target="_blank"><i class="fab fa-linkedin fa-10x"></i></a>
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/miguelangelnt/" target="_blank"><i class="fab fa-instagram fa-10x"></i></a>
         </div>
       </div>
     </footer>
-    
+
     <canvas class="background"></canvas>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="src/particles.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="src/headline.js"></script>
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
